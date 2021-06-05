@@ -1,0 +1,56 @@
+// C++ code
+//
+void setup()
+{
+  pinMode(8,OUTPUT);//Led rojo segundo semaforo
+  pinMode(9, OUTPUT);//led amarillo segundo semaforo
+  pinMode(10, OUTPUT);//led verde segundo semaforo
+  pinMode(11, OUTPUT);//led rojo primer semaforo
+  pinMode(12, OUTPUT);//led amarillo primer semaforo
+  pinMode(13, OUTPUT);//led verde primer semaforo
+}
+
+void loop()
+{
+  digitalWrite(11, HIGH);//Led rojo del primer semaforo se activan 
+  digitalWrite(10, HIGH);//Led verde del segundo semaforo se activan
+  delay(10000);//por 10 segundos 
+  digitalWrite(10, LOW);//Led verde del segundo semaforo se desactiva 
+  delay(1000);//por 1 segundo 
+  digitalWrite(10, HIGH);//Led verde dels segundo semaforo se activa
+  delay(1000);//por unn segundo
+  digitalWrite(10, LOW);//Led verde del segundo semaforo se desactiva
+  delay(1000);//por 1 segundo
+  digitalWrite(10, HIGH);//Led verde del segundo semaforo se activa
+  delay(1000);//por 1 segundo
+  digitalWrite(10, LOW);//Led verde del segundo semaforo se desactiva
+  delay(1000);//por 1 segundo
+  digitalWrite(9, HIGH);//Led amarillo del segundo semaforo se activa
+  delay(1000);//por 1 segundo
+  digitalWrite(9, LOW);//Led amarillo del segundo semaforo se desactiva
+   digitalWrite(11, LOW);//Led rojo del primer semaforo se desactiva
+  digitalWrite(10, LOW);//Led verde del segundo semaforo se desactiva
+
+ 
+  
+  digitalWrite(8, HIGH);//Led rojo del segundo semaforo se activa 
+  digitalWrite(13, HIGH);//Led verde del primer semaforo se activa 
+  delay(10000);//por 10 segundos
+  digitalWrite(13, LOW);//Led verde del primer semaforo se desactiva
+  delay(1000);//por 1 segundo
+  digitalWrite(13, HIGH);//Led verde del primer semaforo se activa
+  delay(1000);//por 1 segundo
+  digitalWrite(13, LOW);//Led verde del primer semaforo se desactiva
+  delay(1000);//por 1 segundo
+  digitalWrite(13, HIGH);//Led verde del primer semaforo se activa
+  delay(1000);//por 1 segundo
+  digitalWrite(13, LOW);//Led verde del primer semaforo se desactiva
+  delay(1000);//por 1 segundo
+  digitalWrite(12, HIGH);//Led amarillo del primer semaforo se activa
+  delay(1000);//por 1 segundo
+  digitalWrite(12, LOW);//Led amarillo del primer semaforo se desactiva
+   digitalWrite(8, LOW);//Led rojo del segundo semaforo se desactiva 
+  digitalWrite(13, LOW);//Led verde del primer semaforo se desactiva 
+
+  
+}
